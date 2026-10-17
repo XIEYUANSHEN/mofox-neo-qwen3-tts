@@ -1,0 +1,39 @@
+{
+  "name": "qwen3_tts",
+  "display_name": "Qwen3 语音合成",
+  "version": "1.0.0",
+  "description": "基于 Qwen3-TTS 本地服务的语音合成插件。调用本地 TTS 服务将文本转为语音消息发送，支持自定义音色与鉴权 token。",
+  "author": "中生",
+  "license": "MIT",
+  "homepage": "https://github.com/XIEYUANSHEN/mofox-neo-qwen3-tts",
+  "repository_url": "https://github.com/XIEYUANSHEN/mofox-neo-qwen3-tts",
+  "github_repo": "mofox-neo-qwen3-tts",
+  "categories": ["chat"],
+  "tags": ["tts", "voice", "qwen3", "语音合成"],
+  "dependencies": {
+    "plugins": [],
+    "components": []
+  },
+  "include": [
+    {
+      "component_type": "config",
+      "component_name": "config",
+      "dependencies": [],
+      "enabled": true
+    },
+    {
+      "component_type": "action",
+      "component_name": "say_voice",
+      "dependencies": [],
+      "enabled": true
+    }
+  ],
+  "entry_point": "plugin.py",
+  "min_core_version": "1.2.0-rc.2",
+  "api_version": {
+    "log_api": "1.0.0",
+    "send_api": "1.0.0"
+  },
+  "python_dependencies": [],
+  "dependencies_required": true
+}
