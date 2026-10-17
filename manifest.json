@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "基于 Qwen3-TTS 本地服务的语音合成插件。调用本地 TTS 服务将文本转为语音消息发送，支持自定义音色与鉴权 token。",
   "author": "中生",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "homepage": "https://github.com/XIEYUANSHEN/mofox-neo-qwen3-tts",
   "repository_url": "https://github.com/XIEYUANSHEN/mofox-neo-qwen3-tts",
   "github_repo": "mofox-neo-qwen3-tts",

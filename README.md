@@ -105,4 +105,4 @@ qwen3_tts/
 
 ## License
 
-MIT
+GPL-3.0
