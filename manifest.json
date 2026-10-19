@@ -1,7 +1,7 @@
 {
   "name": "qwen3_tts",
   "display_name": "Qwen3 语音合成",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于 Qwen3-TTS 本地服务的语音合成插件。调用本地 TTS 服务将文本转为语音消息发送，支持自定义音色与鉴权 token。",
   "author": "中生",
   "license": "GPL-3.0",

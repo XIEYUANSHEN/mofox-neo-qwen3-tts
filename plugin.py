@@ -21,7 +21,7 @@ class Qwen3TTSPlugin(BasePlugin):
 
     plugin_name = "qwen3_tts"
     plugin_description = "把文字交给 Qwen3-TTS 服务合成语音消息发出去"
-    plugin_version = "1.0.0"
+    plugin_version = "1.0.1"
 
     configs: list[type] = [Qwen3TTSConfig]
     dependent_components: list[str] = []
