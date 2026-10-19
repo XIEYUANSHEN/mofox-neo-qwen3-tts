@@ -86,7 +86,11 @@ class SayVoiceAction(BaseAction):
         "参数 content：要说的纯文本，不要带引号、不要加括号说明。"
     )
 
-    chat_type = ChatType.PRIVATE
+    # 声明 ALL：让组件在所有聊天类型都能进入候选；是否真的在群聊发语音
+    # 由 go_activate / execute 里的 allow_group 配置决定（动态开关）。
+    # ⚠️ 若写 PRIVATE，框架静态过滤会在群聊流直接剔除组件，allow_group 将失效
+    #    （MoFox Neo 1.3.0 起 filter_component_classes 会按 chat_type 过滤）。
+    chat_type = ChatType.ALL
     associated_platforms: list[str] = ["qq"]
     associated_types = ["text"]
     chatter_allow: list[str] = []

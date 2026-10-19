@@ -69,7 +69,7 @@
 用配置的音色说一句话，以语音消息发出。
 
 - **调用名**：`action-say_voice`
-- **ChatType**：PRIVATE（群聊需 `allow_group=true`）
+- **ChatType**：ALL（群聊由 `allow_group` 控制；默认 `false` = 仅私聊）
 - **参数**：`content`（str）— 要合成的文本，一句话，≤120 字
 
 > 合成一次约十几秒，请勿频繁调用；一次只放一句话，不要塞长段落。
